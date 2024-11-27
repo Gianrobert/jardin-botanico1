@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clasificador de Flores - Jardín Botánico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-container">
+               
+            </div>
+            <h1>Clasificador de Flores</h1>
+            <p>Bienvenido al sistema de clasificación de flores del <strong>Jardín Botánico</strong>. Suba una imagen para conocer más sobre nuestras flores.</p>
+        </header>
+
+        <!-- Formulario de carga -->
+        <section class="form-section">
+            <form id="uploadForm" class="upload-form">
+                <label for="imageInput">Selecciona una imagen:</label>
+                <input type="file" id="imageInput" name="image" accept="image/*" required>
+                <button type="submit">Clasificar Imagen</button>
+            </form>
+        </section>
+
+        <!-- Resultados de la predicción -->
+        <section id="predictionResult" class="prediction-section">
+            <h2>Resultados de la Predicción</h2>
+            <div id="predictionMessage">Esperando imagen...</div>
+            <div id="result"></div>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Jardín Botánico. Conectando personas con la naturaleza.</p>
+        </footer>
+    </div>
+   
+    <script src="script.js"></script>
+</body>
+</html>
+
+
